@@ -3,13 +3,12 @@ import { Routes, Route } from 'react-router-dom';
 import AllWatchesPage from './pages/AllWatches';
 import NewWatchPage from './pages/NewWatch';
 import Favorites from './pages/Favorites';
-
-import MainNavigation from './components/layout/MainNavigation';
+import Layout from './components/layout/Layout';
 
 function App() {
   return (
     <div>
-      <MainNavigation />
+      <Layout>
         <Routes>
           <Route path='/welcome' element={<AllWatchesPage />} />
 
@@ -17,6 +16,7 @@ function App() {
 
           <Route path='/favorites' element={<Favorites />} />
         </Routes>
+      </Layout>
     </div>
   );
 }

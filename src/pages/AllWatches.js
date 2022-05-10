@@ -1,4 +1,5 @@
 import WatchList from "../components/watches/WatchList";
+import classes from './AllWatches.module.css';
 
 const DUMMY_DATA = [
     {
@@ -21,7 +22,7 @@ const DUMMY_DATA = [
 function AllWatchesPage() {
     return (
     <section>
-        <h1>All Watches</h1>
+        <h1 className={classes.h1}>All Watches</h1>
         <WatchList watches={DUMMY_DATA}/>
         
     </section>

@@ -1,4 +1,4 @@
-import WatchList from "../components/layout/watches/WatchList";
+import WatchList from "../components/watches/WatchList";
 
 const DUMMY_DATA = [
     {

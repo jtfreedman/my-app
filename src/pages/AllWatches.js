@@ -1,3 +1,5 @@
+import WatchList from "../components/layout/watches/WatchList";
+
 const DUMMY_DATA = [
     {
         id: 'watch1',
@@ -20,11 +22,7 @@ function AllWatchesPage() {
     return (
     <section>
         <h1>All Watches</h1>
-        <ul>
-            {DUMMY_DATA.map((watch) => {
-                return <li key={watch.id}>{watch.title}</li>
-            })}
-        </ul>
+        <WatchList watches={DUMMY_DATA}/>
         
     </section>
     );

@@ -4,16 +4,19 @@ import AllWatchesPage from './pages/AllWatches';
 import NewWatchPage from './pages/NewWatch';
 import Favorites from './pages/Favorites';
 
+import MainNavigation from './components/layout/MainNavigation';
+
 function App() {
   return (
     <div>
-      <Routes>
-        <Route path='/welcome'element={<AllWatchesPage />} />
+      <MainNavigation />
+        <Routes>
+          <Route path='/welcome' element={<AllWatchesPage />} />
 
-        <Route path='/new-watch'element={<NewWatchPage />} />
+          <Route path='/new-watch' element={<NewWatchPage />} />
 
-        <Route path='/favorites'element={<Favorites />} />
-      </Routes>
+          <Route path='/favorites' element={<Favorites />} />
+        </Routes>
     </div>
   );
 }

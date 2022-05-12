@@ -1,5 +1,12 @@
+import NewWatchForm from "../components/watches/NewWatchForm";
+
 function NewWatchPage() {
-    return <div>New Watch Page</div>;
+    return (
+        <section>
+            <h1>Add a New Watch</h1>
+            <NewWatchForm />
+        </section>
+    );
 }
 
 export default NewWatchPage;

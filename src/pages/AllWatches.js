@@ -20,6 +20,14 @@ const DUMMY_DATA = [
 
 
 function AllWatchesPage() {
+    fetch(
+        'https://my-app-1b537-default-rtdb.firebaseio.com/watches.json',
+    ).then(response => {
+        return response.json();
+    }).then(data => {
+        //changing to add state to handle response data
+    });;
+
     return (
     <section>
         <h1 className={classes.h1}>All Watches</h1>

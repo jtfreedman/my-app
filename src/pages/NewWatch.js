@@ -18,8 +18,6 @@ function NewWatchPage() {
         ).then(() => {
             navigate('/', {replace:true});
         });
-
-
     }
 
     return (

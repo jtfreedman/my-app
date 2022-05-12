@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
+import HomePage from './pages/HomePage';
 import AllWatchesPage from './pages/AllWatches';
 import NewWatchPage from './pages/NewWatch';
 import Favorites from './pages/Favorites';
@@ -10,7 +11,9 @@ function App() {
     <div>
       <Layout>
         <Routes>
-          <Route path='/welcome' element={<AllWatchesPage />} />
+          <Route path='/' element={<HomePage />} />
+
+          <Route path='/all-watches' element={<AllWatchesPage />} />
 
           <Route path='/new-watch' element={<NewWatchPage />} />
 

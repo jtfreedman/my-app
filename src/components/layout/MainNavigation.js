@@ -10,7 +10,7 @@ function MainNavigation()
             <nav>
               <ul>
                 <li>
-                    <Link to='/welcome'>All Watches</Link>
+                    <Link to='/all-watches'>All Watches</Link>
                 </li>
                 <li>
                     <Link to='/new-watch'>Add New Watch</Link>

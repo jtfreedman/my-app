@@ -3,7 +3,7 @@ import { useRef } from 'react';
 import classes from './NewWatchForm.module.css'
 import Card from "../ui/Card";
 
-function NewWatchForm () {
+function NewWatchForm (props) {
     const titleInputRef = useRef();
     const imageInputRef = useRef();
     const priceInputRef = useRef();
@@ -24,7 +24,7 @@ function NewWatchForm () {
             desc: enteredDesc
         };
 
-        console.log(watchData);
+        props.onAddWatch(watchData);
     }
 
     return (

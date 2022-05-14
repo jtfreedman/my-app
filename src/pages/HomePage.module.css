@@ -3,6 +3,5 @@
 }
 
 .image{
-    width: 150%;
-    
+    align-self: stretch;
 }

@@ -1,5 +1,28 @@
+import { useContext } from 'react';
+
+import FavoritesContext from '../store/favorites-context';
+import WatchList from '../components/watches/WatchList';
+
 function FavoritesPage() {
-    return <div>Favorites Page</div>;
+    const favContext = useContext(FavoritesContext);
+
+    let content;
+
+    if (favContext.total === 0)
+    {
+        content = <p>You currently have no favorites, start adding some!</p>
+    }
+    else
+    {
+        content = <WatchList watches={favContext.favorites} />
+    }
+
+    return (
+        <section>
+            <h1>My Favorites</h1>
+            {content}
+        </section>
+    );
 }
 
 export default FavoritesPage;

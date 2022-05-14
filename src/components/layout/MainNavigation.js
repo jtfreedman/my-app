@@ -17,7 +17,6 @@ function MainNavigation()
     return (
         <header className={classes.header}>
             <nav>
-                
                 <ul>
                     <div className={classes.logo} onClick={routeChange}>myWatches</div>
                     <li>

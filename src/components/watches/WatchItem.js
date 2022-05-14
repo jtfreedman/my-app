@@ -1,7 +1,32 @@
+import { useContext } from 'react';
+
 import classes from './WatchItem.module.css';
 import Card from '../ui/Card';
+import FavoritesContext from '../../store/favorites-context';
 
 function WatchItem(props) {
+    const favContext = useContext(FavoritesContext);
+
+    const itemIsFavorite = favContext.itemIsFavorite(props.id);
+
+    function toggleFavoriteHandler() {
+        if (itemIsFavorite)
+        {
+            favContext.removeFavorite(props.id)
+        }
+        else
+        {
+            favContext.addFavorite({
+                id: props.id,
+                title: props.title,
+                price: props.price,
+                image: props.image, 
+                description: props.description
+            })
+        }
+    }
+
+
     return (
         <li className={classes.item}>
             <Card>
@@ -14,7 +39,7 @@ function WatchItem(props) {
                     <p>{props.description}</p>
                 </div>
                 <div className={classes.actions}>
-                    <button>Add to Favorites</button>
+                    <button onClick={toggleFavoriteHandler}>{itemIsFavorite ? 'Remove fom List' : "Add to Favorite"}</button>
                 </div>
             </Card>
         </li>

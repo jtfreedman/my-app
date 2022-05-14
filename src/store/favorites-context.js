@@ -8,9 +8,9 @@ const FavoritesContext = createContext({
     itemIsFavorite: (watchID) => {}
 });
 
-function FavoritesContextProvider(props) {
+export function FavoritesContextProvider(props) {
 
-    const [userFavorites, setUserFavorites] = useState();
+    const [userFavorites, setUserFavorites] = useState([]);
 
     function addFavoriteHandler(favoriteWatch) {
         setUserFavorites((peviousUserFavorites) => {
@@ -42,3 +42,5 @@ function FavoritesContextProvider(props) {
         </FavoritesContext.Provider>
         );
 }
+
+export default FavoritesContext;

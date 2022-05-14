@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 
 import classes from './MainNavigation.module.css';
@@ -8,9 +8,15 @@ function MainNavigation()
 {
     const favContext = useContext(FavoritesContext);
 
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+        let path = '/'; 
+        navigate(path);
+    }
+
     return (
         <header className={classes.header}>
-            <div className={classes.logo}>myWatches</div>
+            <div className={classes.logo} onClick={routeChange}>myWatches</div>
             <nav>
               <ul>
                 <li>

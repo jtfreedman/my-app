@@ -19,7 +19,7 @@ function FavoritesPage() {
 
     return (
         <section>
-            <h1>My Favorites</h1>
+            <h2>My Favorites</h2>
             {content}
         </section>
     );

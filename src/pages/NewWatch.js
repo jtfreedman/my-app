@@ -22,7 +22,7 @@ function NewWatchPage() {
 
     return (
         <section>
-            <h1>Add a New Watch</h1>
+            <h2>Add a New Watch</h2>
             <NewWatchForm onAddWatch={addWatchHandler}/>
         </section>
     );

@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
 import WatchList from "../components/watches/WatchList";
-import classes from './AllWatches.module.css';
 
 function AllWatchesPage() {
     const [isLoading, setIsLoading] = useState(true);
@@ -44,7 +43,7 @@ function AllWatchesPage() {
 
     return (
     <section>
-        <h1 className={classes.h1}>All Watches</h1>
+        <h2>All Watches</h2>
         <WatchList watches={loadedWatches}/>
         
     </section>

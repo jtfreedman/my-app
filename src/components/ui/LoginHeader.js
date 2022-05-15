@@ -20,7 +20,6 @@ function LoginHeader() {
                 <span className={classes.desktop__track}>Track Order</span>
                 <span className={classes.desktop__login} onClick={routeChange}>Log In</span>
             </div>
-            
         </div>
     );
 }

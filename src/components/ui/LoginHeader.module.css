@@ -15,25 +15,40 @@
 
 .desktop__shipping{
     display: inline-block;
-    margin-right: 25%;
 }
 
 .desktop__about{
     display: inline-block;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0 1rem;
 }
 
 .desktop__locations{
     display: inline-block;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0 1rem;
 }
 
 .desktop__track{
     display: inline-block;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0 1rem;
 }
 
 .desktop__login{
     display: inline-block;
     cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0 1rem;
 }

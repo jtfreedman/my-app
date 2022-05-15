@@ -1,17 +1,12 @@
 import classes from './HomePage.module.css';
+
 import MainNavigation from '../components/layout/MainNavigation';
+import LoginHeader from '../components/ui/LoginHeader';
 
 function HomePage() {
     return (
         <>
-            <div className={classes.desktop}>
-                <span className={classes.desktop__shipping}>Free U.S. Standard Shipping Orders $50+</span>
-                <span className={classes.desktop__about}>About Us</span>
-                <span className={classes.desktop__locations}>Locations</span>
-                <span className={classes.desktop__track}>Track Order</span>
-                <span className={classes.desktop__login}>Log In</span>
-            </div>
-
+            <LoginHeader />
             <MainNavigation />
 
             <header className={classes.image}>

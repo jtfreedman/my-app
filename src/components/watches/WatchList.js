@@ -10,7 +10,7 @@ function WatchList(props) {
                 id={watch.id} 
                 image={watch.image} 
                 title={watch.title}
-                description={watch.description}
+                desc={watch.desc}
                 price={watch.price}/>)}
         </ul>
     );

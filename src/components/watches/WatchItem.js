@@ -21,7 +21,7 @@ function WatchItem(props) {
                 title: props.title,
                 price: props.price,
                 image: props.image, 
-                description: props.description
+                desc: props.desc
             })
         }
     }
@@ -36,7 +36,7 @@ function WatchItem(props) {
                 <div className={classes.content}>
                     <h3>{props.title}</h3>
                     <p>{props.price}</p>
-                    <p>{props.description}</p>
+                    <p>{props.desc}</p>
                 </div>
                 <div className={classes.actions}>
                     <button onClick={toggleFavoriteHandler}>{itemIsFavorite ? 'Remove fom List' : "Add to Favorite"}</button>

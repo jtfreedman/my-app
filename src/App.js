@@ -9,17 +9,15 @@ import Layout from './components/layout/Layout';
 function App() {
   return (
     <div>
-      <Layout>
         <Routes>
           <Route path='/' element={<HomePage />} />
 
-          <Route path='/all-watches' element={<AllWatchesPage />} />
+          <Route path='/all-watches' element={<Layout><AllWatchesPage /></Layout>} />
 
-          <Route path='/new-watch' element={<NewWatchPage />} />
+          <Route path='/new-watch' element={<Layout><NewWatchPage /></Layout>} />
 
-          <Route path='/favorites' element={<Favorites />} />
+          <Route path='/favorites' element={<Layout><Favorites /></Layout>} />
         </Routes>
-      </Layout>
     </div>
   );
 }

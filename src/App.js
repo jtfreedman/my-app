@@ -4,6 +4,8 @@ import HomePage from './pages/HomePage';
 import AllWatchesPage from './pages/AllWatches';
 import NewWatchPage from './pages/NewWatch';
 import Favorites from './pages/Favorites';
+import Login from './pages/Login';
+
 import Layout from './components/layout/Layout';
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
           <Route path='/new-watch' element={<Layout><NewWatchPage /></Layout>} />
 
           <Route path='/favorites' element={<Layout><Favorites /></Layout>} />
+
+          <Route path='/login' element={<Login />} />
         </Routes>
     </div>
   );

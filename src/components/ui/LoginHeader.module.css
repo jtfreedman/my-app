@@ -20,16 +20,20 @@
 
 .desktop__about{
     display: inline-block;
+    cursor: pointer;
 }
 
 .desktop__locations{
     display: inline-block;
+    cursor: pointer;
 }
 
 .desktop__track{
     display: inline-block;
+    cursor: pointer;
 }
 
 .desktop__login{
     display: inline-block;
+    cursor: pointer;
 }

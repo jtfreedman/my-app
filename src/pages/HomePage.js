@@ -9,7 +9,7 @@ function HomePage() {
             <LoginHeader />
             <MainNavigation />
 
-            <header className={classes.image}>
+            <header>
                 <div>Login</div>
             </header>
         </>

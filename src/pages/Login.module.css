@@ -2,7 +2,7 @@
     height: 330px;
     width: 350px;
     margin: auto;
-    border: 1px solid black;
+    color: #2E2E2E;
 }
 
 .loginButton{
@@ -24,6 +24,7 @@
     float:right;
     margin-top: 1rem;
     margin-right: .75rem;
+    color:#bebebe;
 }
 
 .form {

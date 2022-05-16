@@ -1,5 +1,3 @@
-import classes from './HomePage.module.css';
-
 import MainNavigation from '../components/layout/MainNavigation';
 import LoginHeader from '../components/ui/LoginHeader';
 

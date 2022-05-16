@@ -5,6 +5,7 @@ import AllWatchesPage from './pages/AllWatches';
 import NewWatchPage from './pages/NewWatch';
 import Favorites from './pages/Favorites';
 import Login from './pages/Login';
+import CreateAccount from './pages/CreateAccount';
 
 import Layout from './components/layout/Layout';
 
@@ -21,6 +22,8 @@ function App() {
           <Route path='/favorites' element={<Layout><Favorites /></Layout>} />
 
           <Route path='/login' element={<Layout><Login /></Layout>} />
+
+          <Route path='/signup' element={<Layout><CreateAccount /></Layout>} />
         </Routes>
     </div>
   );

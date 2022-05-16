@@ -1,14 +1,20 @@
+import { useNavigate } from 'react-router-dom';
 import classes from './Login.module.css'
 
 function Login() {
 
     function submitHandler(event) {}
 
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+        let path = '/signup'; 
+        navigate(path);
+    }
 
     return (
         <div className={classes.loginForm}>
             <div className={classes.loginButton}>Login</div>
-            <div className={classes.createAccount}>Create Account</div>
+            <div className={classes.createAccount} onClick={routeChange}>Create Account</div>
             <form className={classes.form} onSubmit={submitHandler}>
                 <div className={classes.control}>
                     <input className={classes.loginText} type="text" required id="user"/>

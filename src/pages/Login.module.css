@@ -1,8 +1,8 @@
 .loginForm{
     height: 330px;
     width: 350px;
-    background-color: rgb(153, 148, 148);
     margin: auto;
+    border: 1px solid black;
 }
 
 .loginButton{
@@ -13,6 +13,7 @@
     float: left;
     margin-top: 1rem;
     margin-left: .75rem;
+    cursor: pointer;
 }
 
 .createAccount{
@@ -23,4 +24,27 @@
     float:right;
     margin-top: 1rem;
     margin-right: .75rem;
+}
+
+.form {
+    display: inline-block;
+    padding: 1.5rem;
+    padding-top: 3%;
+  }
+
+  .loginText, .loginPassword {
+    width: 100%;
+    padding-top: 3%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    height: 3rem;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    border: 1px solid #c4c4c4;
+    background-color: rgb(247, 246, 203);
 }

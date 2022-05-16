@@ -14,6 +14,11 @@ function Login() {
                     <input className={classes.loginText} type="text" required id="user"/>
                     <input className={classes.loginPassword} type="text" required id="password"/>
                 </div>
+                <label className={classes.checkboxContainer}>
+                    <input className={classes.checkmark} type="checkbox" name="checkbox" value="remember" />
+                    <span ></span>
+                    <div className={classes.checkmarkText}>Remember Me</div>
+                </label>
             </form>
         </div>
     );

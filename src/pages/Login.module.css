@@ -25,6 +25,7 @@
     margin-top: 1rem;
     margin-right: .75rem;
     color:#bebebe;
+    cursor: pointer;
 }
 
 .form {
@@ -48,4 +49,27 @@
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     border: 1px solid #c4c4c4;
     background-color: rgb(247, 246, 203);
+}
+
+.checkboxContainer {
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+.checkmarkText{
+    margin-top: .5%;
+    margin-left: 2%;
+}
+
+.checkmark{
+    top: 0;
+    left: 0;
+    height: 1.2rem;
+    width: 1.2rem;
+    background-color: transparent;
+    border: 2px solid #c4c4c4;
+    border-radius: 4px;
 }

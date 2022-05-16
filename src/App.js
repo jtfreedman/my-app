@@ -20,7 +20,7 @@ function App() {
 
           <Route path='/favorites' element={<Layout><Favorites /></Layout>} />
 
-          <Route path='/login' element={<Login />} />
+          <Route path='/login' element={<Layout><Login /></Layout>} />
         </Routes>
     </div>
   );

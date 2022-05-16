@@ -1,0 +1,26 @@
+.loginForm{
+    height: 330px;
+    width: 350px;
+    background-color: rgb(153, 148, 148);
+    margin: auto;
+}
+
+.loginButton{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+    float: left;
+    margin-top: 1rem;
+    margin-left: .75rem;
+}
+
+.createAccount{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+    float:right;
+    margin-top: 1rem;
+    margin-right: .75rem;
+}

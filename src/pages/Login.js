@@ -19,6 +19,11 @@ function Login() {
                     <span ></span>
                     <div className={classes.checkmarkText}>Remember Me</div>
                 </label>
+                <div>
+                    <button className={classes.actions}>LOG IN</button>
+                    <div className={classes.forgotPassword}>Forgot Password</div>
+                </div>
+                
             </form>
         </div>
     );

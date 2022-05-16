@@ -48,10 +48,10 @@
     font-size: 1rem;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
     border: 1px solid #c4c4c4;
-    background-color: rgb(247, 246, 203);
 }
 
 .checkboxContainer {
+    margin-top: 3%;
     width: 100%;
     display: flex;
     cursor: pointer;
@@ -73,4 +73,31 @@
     background-color: transparent;
     border: 2px solid #c4c4c4;
     border-radius: 4px;
+}
+
+
+
+.actions{
+    display: inline-block;
+    margin-top: 1.4rem;
+    width: 9rem;
+    height: 2.9rem;
+    color: white;
+    font-weight: 600;
+    font-size: .83rem;
+    background: #2e2e2e;
+    border: 1px solid #2e2e2e;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.forgotPassword{
+    margin-top: 2.15rem;
+    color: #2e2e2e;
+    font-size: 1.05rem;
+    float: right;
+    font-weight: 50;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    cursor: pointer;
 }

@@ -17,8 +17,8 @@ function Login() {
             <div className={classes.createAccount} onClick={routeChange}>Create Account</div>
             <form className={classes.form} onSubmit={submitHandler}>
                 <div className={classes.control}>
-                    <input className={classes.loginText} type="text" required id="user"/>
-                    <input className={classes.loginPassword} type="text" required id="password"/>
+                    <input className={classes.loginText} type="text" required id="email" placeholder="Email"/>
+                    <input className={classes.loginPassword} type="text" required id="password" placeholder="Password"/>
                 </div>
                 <label className={classes.checkboxContainer}>
                     <input className={classes.checkmark} type="checkbox" name="checkbox" value="remember" />

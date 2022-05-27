@@ -28,70 +28,6 @@
     cursor: pointer;
 }
 
-.form {
-    display: inline-block;
-    padding: 1.5rem;
-    padding-top: 3%;
-  }
-
-  .loginText, .loginPassword {
-    width: 100%;
-    padding-top: 3%;
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    appearance: none;
-    display: inline-block;
-    height: 3rem;
-    border-radius: 6px;
-    margin: 0.5rem 0;
-    padding: 0 0.5rem;
-    font-size: 1rem;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    border: 1px solid #c4c4c4;
-}
-
-.checkboxContainer {
-    margin-top: 3%;
-    width: 100%;
-    display: flex;
-    cursor: pointer;
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-size: 1.2rem;
-}
-
-.checkmarkText{
-    margin-top: .5%;
-    margin-left: 2%;
-    color:#bebebe;
-}
-
-.checkmark{
-    top: 0;
-    left: 0;
-    height: 1.2rem;
-    width: 1.2rem;
-    background-color: transparent;
-    border: 2px solid #c4c4c4;
-    border-radius: 4px;
-}
-
-
-
-.actions{
-    display: inline-block;
-    margin-top: 1.4rem;
-    width: 9rem;
-    height: 2.9rem;
-    color: white;
-    font-weight: 600;
-    font-size: .83rem;
-    background: #2e2e2e;
-    border: 1px solid #2e2e2e;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-}
-
 .forgotPassword{
     margin-top: 2.15rem;
     color: #2e2e2e;
@@ -99,21 +35,5 @@
     float: right;
     font-weight: 50;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    cursor: pointer;
-}
-
-.signUp {
-    display: block;
-    margin:0 auto;
-    margin-top: 1.4rem;
-    width: 9rem;
-    height: 2.9rem;
-    color: white;
-    font-weight: 600;
-    font-size: .83rem;
-    background: #2e2e2e;
-    border: 1px solid #2e2e2e;
-    border-radius: 5px;
-    text-align: center;
     cursor: pointer;
 }

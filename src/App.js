@@ -6,8 +6,10 @@ import NewWatchPage from './pages/NewWatch';
 import Favorites from './pages/Favorites';
 import Login from './pages/Login';
 import CreateAccount from './pages/CreateAccount';
+import Admin from './pages/admin/Admin';
 
 import Layout from './components/layout/Layout';
+import AdminLayout from './components/layout/adminLayout/AdminLayout';
 
 function App() {
   function onLogin(enteredLoginData) {
@@ -15,7 +17,7 @@ function App() {
       ...enteredLoginData
     };
 
-    console.log(loginData)
+    console.log(loginData);
   }
   return (
     <div>
@@ -31,6 +33,8 @@ function App() {
           <Route path='/login' element={<Layout><Login onLogin={onLogin}/></Layout>} />
 
           <Route path='/signup' element={<Layout><CreateAccount /></Layout>} />
+
+          <Route path='/admin' element={<AdminLayout><Admin /></AdminLayout>} />
         </Routes>
     </div>
   );

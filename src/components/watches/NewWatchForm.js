@@ -36,6 +36,11 @@ function NewWatchForm (props) {
         };
 
         props.onAddWatch(watchData);
+
+        setCurrentTitle('');
+        setCurrentImage('');
+        setCurrentPrice('');
+        setCurrentDesc('');
     }
 
     return (
@@ -47,6 +52,7 @@ function NewWatchForm (props) {
                         type="text"
                         required id="title"
                         onChange={titleChangeHandler}
+                        value={currentTitle}
                     />
                 </div>
                 <div className={classes.control}>
@@ -55,6 +61,7 @@ function NewWatchForm (props) {
                         type="url"
                         required id="image"
                         onChange={imageChangeHandler}
+                        value={currentImage}
                     />
                 </div>
                 <div className={classes.control}>
@@ -63,6 +70,7 @@ function NewWatchForm (props) {
                         type="text"
                         required id="price"
                         onChange={priceChangeHandler}
+                        value={currentPrice}
                     />
                 </div>
                 <div className={classes.control}>
@@ -71,6 +79,7 @@ function NewWatchForm (props) {
                         id='desc'
                         required rows='5'
                         onChange={descChangeHandler}
+                        value={currentDesc}
                     />
                 </div>
                 <div className={classes.actions}>

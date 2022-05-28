@@ -97,11 +97,11 @@ export default function NewUserForm(props) {
                     value={currentPasswordConfirm}
                 />
             </div>
-            <label className={classes.checkboxContainer}>
-                <input className={classes.checkmark} type="checkbox" name="checkbox" value="remember"/>
-                <span ></span>
-                <div className={classes.checkmarkText}>I want to recieve promotional emails.</div>
-            </label>
+                <label className={classes.checkboxContainer}>
+                    <input className={classes.checkmark} type="checkbox" name="checkbox" value="remember"/>
+                    <span ></span>
+                    <div className={classes.checkmarkText}>I want to recieve promotional emails.</div>
+                </label>
             <div>
                 <button className={classes.signUp}>SIGN UP</button>
             </div>

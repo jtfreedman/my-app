@@ -12,38 +12,33 @@ export default function NewUserForm(props) {
     })
 
     function firstNameChangeHandler(event) {
-        setUserInput({
-            ...userInput,
-            currentFirstName: event.target.value,
-        })
+        setUserInput((prevState) => {
+            return { ...prevState, currentFirstName: event.target.value };
+        });
     };
 
     function lastNameChangeHandler(event) {
-        setUserInput({
-            ...userInput,
-            currentLastName: event.target.value,
-        })
+        setUserInput((prevState) => {
+            return { ...prevState, currentLastName: event.target.value };
+        });
     };
 
     function emailChangeHandler(event) {
-        setUserInput({
-            ...userInput,
-            currentEmailName: event.target.value,
-        })
+        setUserInput((prevState) => {
+            return { ...prevState, currentEmailName: event.target.value };
+        });
     };
 
     function passwordChangeHandler(event) {
-        setUserInput({
-            ...userInput,
-            currentPassword: event.target.value,
-        })
+        setUserInput((prevState) => {
+            return { ...prevState, currentPassword: event.target.value };
+        });
     };
 
     function passwordConfirmChangeHandler(event) {
-        setUserInput({
-            ...userInput,
-            currentPasswordConfirm: event.target.value,
-        })
+        setUserInput((prevState) => {
+            return { ...prevState, currentPasswordConfirm: event.target.value };
+        });
     };
 
     const firstNameInputRef = useRef();

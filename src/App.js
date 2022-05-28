@@ -10,6 +10,13 @@ import CreateAccount from './pages/CreateAccount';
 import Layout from './components/layout/Layout';
 
 function App() {
+  function onLogin(enteredLoginData) {
+    const loginData = {
+      ...enteredLoginData
+    };
+
+    console.log(loginData)
+  }
   return (
     <div>
         <Routes>
@@ -21,7 +28,7 @@ function App() {
 
           <Route path='/favorites' element={<Layout><Favorites /></Layout>} />
 
-          <Route path='/login' element={<Layout><Login /></Layout>} />
+          <Route path='/login' element={<Layout><Login onLogin={onLogin}/></Layout>} />
 
           <Route path='/signup' element={<Layout><CreateAccount /></Layout>} />
         </Routes>

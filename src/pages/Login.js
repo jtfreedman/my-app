@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import LoginForm from '../components/users/LoginForm';
 import classes from './Login.module.css'
 
-function Login() {
+function Login(props) {
     let navigate = useNavigate(); 
     const routeChange = () =>{ 
         let path = '/signup'; 
@@ -14,7 +14,7 @@ function Login() {
             ...enteredLoginData
         };
 
-        console.log(loginData);
+        props.onLogin(loginData);
     };
 
     return (

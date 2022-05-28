@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import classes from './LoginForm.module.css'
 
-export default function LoginForm() {
+export default function LoginForm(props) {
     const [currentEmail, setEmail] = useState('');
     const [currentPassword, setPassword] = useState('');
 
@@ -16,7 +16,12 @@ export default function LoginForm() {
     function submitHandler(event) {
         event.preventDefault();
 
-        //check auth here
+        const userData = {
+            email: currentEmail,
+            password: currentPassword
+        };
+
+        props.onLogin(userData);
 
         setEmail('');
         setPassword('');

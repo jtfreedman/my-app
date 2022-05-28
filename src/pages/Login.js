@@ -9,11 +9,19 @@ function Login() {
         navigate(path);
     }
 
+    function onLoginHandler(enteredLoginData) {
+        const loginData = {
+            ...enteredLoginData
+        };
+
+        console.log(loginData);
+    };
+
     return (
         <div className={classes.loginForm}>
             <div className={classes.loginButton}>Login</div>
             <div className={classes.createAccount} onClick={routeChange}>Create Account</div>
-            <LoginForm />
+            <LoginForm onLogin={onLoginHandler}/>
         </div>
     );
 }

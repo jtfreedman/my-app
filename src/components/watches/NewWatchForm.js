@@ -1,27 +1,38 @@
-import { useRef } from 'react';
+import { useState } from 'react';
 
 import classes from './NewWatchForm.module.css'
 import Card from "../ui/Card";
 
 function NewWatchForm (props) {
-    const titleInputRef = useRef();
-    const imageInputRef = useRef();
-    const priceInputRef = useRef();
-    const descInputRef = useRef();
+    const [currentTitle, setCurrentTitle] = useState('');
+    const [currentImage, setCurrentImage] = useState('');
+    const [currentPrice, setCurrentPrice] = useState('');
+    const [currentDesc, setCurrentDesc] = useState('');
+
+    function titleChangeHandler(event) {
+        setCurrentTitle(event.target.value);
+    };
+
+    function imageChangeHandler(event) {
+        setCurrentImage(event.target.value);
+    };
+
+    function priceChangeHandler(event) {
+        setCurrentPrice(event.target.value);
+    };
+
+    function descChangeHandler(event) {
+        setCurrentDesc(event.target.value);
+    };
 
     function submitHandler(event) {
         event.preventDefault();
 
-        const enteredTitle = titleInputRef.current.value;
-        const enteredImage = imageInputRef.current.value;
-        const enteredPrice = priceInputRef.current.value;
-        const enteredDesc = descInputRef.current.value;
-
         const watchData = {
-            title: enteredTitle,
-            image: enteredImage,
-            price: enteredPrice,
-            desc: enteredDesc
+            title: currentTitle,
+            image: currentImage,
+            price: currentPrice,
+            desc: currentDesc
         };
 
         props.onAddWatch(watchData);
@@ -32,19 +43,35 @@ function NewWatchForm (props) {
             <form className={classes.form} onSubmit={submitHandler}>
                 <div className={classes.control}>
                     <label htmlFor="title">Watch Title</label>
-                    <input type="text" required id="title" ref={titleInputRef}/>
+                    <input
+                        type="text"
+                        required id="title"
+                        onChange={titleChangeHandler}
+                    />
                 </div>
                 <div className={classes.control}>
                     <label htmlFor="image">Watch Image</label>
-                    <input type="url" required id="image" ref={imageInputRef}/>
+                    <input
+                        type="url"
+                        required id="image"
+                        onChange={imageChangeHandler}
+                    />
                 </div>
                 <div className={classes.control}>
                     <label htmlFor="price">Watch Cost</label>
-                    <input type="text" required id="price" ref={priceInputRef}/>
+                    <input
+                        type="text"
+                        required id="price"
+                        onChange={priceChangeHandler}
+                    />
                 </div>
                 <div className={classes.control}>
                     <label htmlFor="desc">Description</label>
-                    <textarea id='desc' required rows='5' ref={descInputRef}></textarea>
+                    <textarea
+                        id='desc'
+                        required rows='5'
+                        onChange={descChangeHandler}
+                    />
                 </div>
                 <div className={classes.actions}>
                     <button>Add Watch</button>

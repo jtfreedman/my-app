@@ -1,18 +1,16 @@
 import classes from './User.module.css';
-import Card from '../../../components/ui/Card';
+import TableCard from '../../../components/ui/TableCard';
 
-function User(props) {
+export default function User(props) {
     return (
         <li className={classes.item}>
-            <Card>
+            <TableCard>
                 <div className={classes.content}>
-                    <h3>{props.title}</h3>
-                    <p>{props.price}</p>
-                    <p>{props.desc}</p>
+                    <h3>{props.email}</h3>
+                    <p>{props.first}</p>
+                    <p>{props.last}</p>
                 </div>
-            </Card>
+            </TableCard>
         </li>
     );
 }
-
-export default WatchItem;

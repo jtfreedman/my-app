@@ -7,6 +7,7 @@ import Favorites from './pages/Favorites';
 import Login from './pages/Login';
 import CreateAccount from './pages/CreateAccount';
 import Admin from './pages/admin/Admin';
+import AllUsers from './pages/admin/AllUsers.js';
 
 import Layout from './components/layout/Layout';
 import AdminLayout from './components/layout/adminLayout/AdminLayout';
@@ -35,6 +36,7 @@ function App() {
           <Route path='/signup' element={<Layout><CreateAccount /></Layout>} />
 
           <Route path='/admin' element={<AdminLayout><Admin /></AdminLayout>} />
+          <Route path='/admin/users' element={<AdminLayout><AllUsers /></AdminLayout>} />
         </Routes>
     </div>
   );

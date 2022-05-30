@@ -7,7 +7,8 @@ export default function UserList(props) {
             {props.users.map(user => 
             <User 
                 key={user.id} 
-                id={user.id} 
+                first={user.firstName}
+                last={user.lastName}
                 email={user.email}
                 password={user.password}
             />)}

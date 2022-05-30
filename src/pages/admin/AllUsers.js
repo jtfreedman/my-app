@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import UserList from './users/UserList';
 
 export default function AllUsers() {
     const [isLoading, setIsLoading] = useState(true);

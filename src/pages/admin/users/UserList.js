@@ -24,7 +24,7 @@ export default function UserList(props) {
             <tbody>
                 {
                     props.users.map((user) => (
-                        <tr key={Math.random(100)}>
+                        <tr key={user.email}>
                             <td>{user.email}</td>
                             <td>{user.firstName}</td>
                             <td>{user.lastName}</td>

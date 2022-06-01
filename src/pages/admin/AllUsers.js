@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import UserList from './users/UserList';
 
+import classes from './AllUsers.module.css'
+
 export default function AllUsers() {
     const [isLoading, setIsLoading] = useState(true);
     const [loadedUsers, setLoadedUsers] = useState([]);
@@ -41,9 +43,8 @@ export default function AllUsers() {
         }
 
     return (
-    <section>
+    <div className={classes.table}>
         <UserList users={loadedUsers}/>
- 
-    </section>
+    </div>
     );
 }

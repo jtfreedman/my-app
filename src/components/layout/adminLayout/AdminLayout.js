@@ -3,9 +3,9 @@ import AdminNavigation from './AdminNavigation';
 
 export default function AdminLayout(props) {
     return (
-        <div>
+        <div className={classes.main}>
             <AdminNavigation />
-            <main className={classes.main}>
+            <main>
                 {props.children}
             </main>
         </div>

@@ -43,7 +43,7 @@ export default function NewUserForm(props) {
             props.onAddUser(userData);
         }
         else {
-            //do something
+            props.onPasswordFail(userData);
         }
         
         setFirstName('');

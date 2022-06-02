@@ -39,7 +39,6 @@ function CreateAccount() {
             <div className={classes.loginButton} onClick={routeChange}>Login</div>
             <div className={classes.createAccount}>Create Account</div>
             <NewUserForm onAddUser={addUserHandler} onPasswordFail={passwordFailHandler}/>
-            
         </div>
     );
 }

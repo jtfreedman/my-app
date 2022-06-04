@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import NewUserForm from '../components/users/NewUserForm';
-import PasswordWarning from '../components/users/PasswordWarning';
+import Warning from '../components/users/Warning';
 import classes from './CreateAccount.module.css';
 
 function CreateAccount() {
-    const [showWarning, setWarningState] = useState(false);
+    const [showPasswordWarning, setPasswordWarningState] = useState(false);
 
     function addUserHandler(userData) {
         fetch(
@@ -23,7 +23,7 @@ function CreateAccount() {
     }
 
     function passwordFailHandler(userData) {
-        setWarningState(true);
+        setPasswordWarningState(true);
     }
 
 
@@ -35,7 +35,7 @@ function CreateAccount() {
 
     return (
         <div className={classes.createAccountForm}>
-            {showWarning && <PasswordWarning/>}
+            {showPasswordWarning && <Warning>Passwords do not match.</Warning>}
             <div className={classes.loginButton} onClick={routeChange}>Login</div>
             <div className={classes.createAccount}>Create Account</div>
             <NewUserForm onAddUser={addUserHandler} onPasswordFail={passwordFailHandler}/>

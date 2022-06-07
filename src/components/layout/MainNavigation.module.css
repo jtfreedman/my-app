@@ -1,5 +1,11 @@
+@media (min-width: 758px){
+  .header{
+    width: fit-content;
+  }
+} 
+
 .header {
-    width: 100%;
+    width: auto;
     height: 6rem;
     display: flex;
     align-items: center;

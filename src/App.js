@@ -1,5 +1,4 @@
 import { Routes, Route } from 'react-router-dom';
-
 import HomePage from './pages/HomePage';
 import AllWatchesPage from './pages/AllWatches';
 import NewWatchPage from './pages/NewWatch';
